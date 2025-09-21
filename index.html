@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Saints Church</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&family=Merriweather:wght@400;700&family=Roboto:wght@300;400;700&family=Lora:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="relative bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 shadow-lg rounded-xl py-4 px-6 mb-6 mt-0">
+        <div class="header-bubbles absolute inset-0 pointer-events-none z-0">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="container mx-auto flex items-center justify-between relative z-10">
+            <div class="flex items-center space-x-3 animate-slide-in-left">
+                <img src="im/church logo.png" alt="All Saints Church" class="h-14 w-14 rounded-full border-2 border-white shadow-md bg-white logo-hover">
+                <span class="heading-font text-2xl font-bold text-gray-900">CSI-All Saints Church, Keela Sadayamankulam</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 animate-fade">
+                <a href="#home" class="nav-link2 text-gray-700 hover:text-white px-3 py-2 rounded-lg">Home</a>
+                <a href="#about" class="nav-link2 text-gray-700 hover:text-white px-3 py-2 rounded-lg">About</a>
+                <a href="#services" class="nav-link2 text-gray-700 hover:text-white px-3 py-2 rounded-lg">Services</a>
+                <a href="#gallery" class="nav-link2 text-gray-700 hover:text-white px-3 py-2 rounded-lg">Gallery</a>
+                <a href="#contact" class="nav-link2 text-gray-700 hover:text-white px-3 py-2 rounded-lg">Contact</a>
+            </nav>
+            <button class="md:hidden" id="mobile-menu-button" aria-label="Open menu" aria-expanded="false">
+                <svg class="w-7 h-7 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <nav class="flex flex-col space-y-4">
+            <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+            <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
+            <a href="#gallery" class="text-gray-700 hover:text-blue-600">Gallery</a>
+            <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+        </nav>
+    </div>
+
+    <section id="home" class="relative h-screen flex items-center justify-center text-white overflow-hidden hero-gradient">
+        <div class="animated-bubbles absolute inset-0 pointer-events-none z-0">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="absolute inset-0">
+            <img src="im/church logo.png" alt="Exterior of a beautiful church" class="w-full h-full object-cover opacity-30 animate-fade" id="home-bg-img">
+        </div>
+        <div class="container mx-auto px-6 z-10 animate-fade-in" id="home-content">
+            <div class="max-w-3xl text-center">
+                <h2 class="heading-font text-4xl sm:text-5xl md:text-6xl font-bold mb-6 animate-slide-in-left" id="home-heading">
+                    Welcome to <br>
+                    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-text">All Saints Church</span>
+                </h2>
+                <p class="text-lg sm:text-xl md:text-2xl mb-8 animate-fade" id="home-paragraph">
+                    <span class="inline-block animate-pulse">A place of faith, hope, and love where everyone is welcome</span>
+                </p>
+                <div class="flex justify-center">
+                    <a href="https://youtube.com/@allsaintschurcheastsadayam4240?si=hlMN5MVKCOA35TFm"
+                       class="bg-white text-blue-800 px-8 py-3 rounded-full font-bold uppercase tracking-wide hover:bg-gray-100 transition animate-pulse shadow-xl"
+                       id="home-cta-button">
+                        <span class="animate-fade-in" id="home-cta-text">Join Our Service<br>Watch Live on Youtube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 relative overflow-hidden">
+        <div class="animated-bubbles absolute inset-0 pointer-events-none z-0">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 animate-slide-in-left" id="about-img-container">
+                    <img src="im/ch edit.jpg" alt="Inside of a cathedral" class="rounded-lg shadow-xl w-full animate-fade-in" id="about-img">
+                </div>
+                <div class="md:w-1/2 md:pl-12 animate-slide-in-right" id="about-text-container">
+                    <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6 text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text animate-gradient-text" id="about-heading">
+                        About Our Church
+                    </h2>
+                    <p class="text-gray-700 mb-6 animate-fade" id="about-p1">
+                        <span class="inline-block animate-pulse">Founded in 1962, All Saints Church has been serving the community with love and devotion. We believe in creating a welcoming space for all people to explore faith and grow spiritually.</span>
+                    </p>
+                    <p class="text-gray-700 mb-6 animate-fade" id="about-p2">
+                        <span class="inline-block animate-pulse">Our mission is to share the love of Christ through worship, fellowship, and service to our neighbors.</span>
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-gradient-to-br from-blue-200 via-blue-300 to-purple-200 p-4 rounded-lg shadow-lg animate-fade-in" id="about-vision">
+                            <h3 class="font-bold text-blue-800 mb-2 animate-gradient-text">Our Vision</h3>
+                            <p class="text-gray-700">To be a beacon of hope in our community.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-200 via-pink-200 to-blue-200 p-4 rounded-lg shadow-lg animate-fade-in" id="about-values">
+                            <h3 class="font-bold text-purple-800 mb-2 animate-gradient-text">Our Values</h3>
+                            <p class="text-gray-700">Faith, Compassion, Integrity, Community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="relative overflow-hidden services-section">
+        <div class="animated-bubbles absolute inset-0 pointer-events-none z-0">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 animate-fade-in" id="services-intro">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4 text-gray-800 animate-gradient-text" id="services-heading">
+                    Our Services
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto animate-fade" id="services-subheading">Join us for worship and fellowship throughout the week</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
+                <div class="service-time bg-white p-6 rounded-lg shadow-md text-center hover:scale-105 hover:shadow-2xl hover:border-l-4 hover:border-blue-600 animate-slide-in-left" id="service-1">
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 animate-gradient-text">Sunday Worship</h3>
+                    <p class="text-blue-600 font-bold text-lg mb-4 animate-pulse">9:00 AM to 11:30 AM</p>
+                    <p class="text-gray-600 animate-fade">Join us for uplifting worship and inspiring messages from Scripture.</p>
+                </div>
+                <div class="service-time bg-white p-6 rounded-lg shadow-md text-center hover:scale-105 hover:shadow-2xl hover:border-l-4 hover:border-pink-600 animate-slide-in-right" id="service-2">
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 animate-gradient-text">Morning Prayer</h3>
+                    <p class="text-pink-600 font-bold text-lg mb-4 animate-pulse">Daily 4:00 AM</p>
+                    <p class="text-gray-600 animate-fade">Join us for a peaceful time of prayer, reflection, and spiritual renewal to start the day with God's presence.</p>
+                </div>
+                <div class="service-time bg-white p-6 rounded-lg shadow-md text-center hover:scale-105 hover:shadow-2xl hover:border-l-4 hover:border-purple-600 animate-slide-in-left" id="service-3">
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 animate-gradient-text">Night Prayer</h3>
+                    <p class="text-purple-600 font-bold text-lg mb-4 animate-pulse">Daily 7:00 PM</p>
+                    <p class="text-gray-600 animate-fade">Come and end your day with heartfelt prayer, thanksgiving, and quiet reflection in God's presence.</p>
+                </div>
+                <div class="service-time bg-white p-6 rounded-lg shadow-md text-center hover:scale-105 hover:shadow-2xl hover:border-l-4 hover:border-green-600 animate-slide-in-right" id="service-4">
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 animate-gradient-text">Youth Group</h3>
+                    <p class="text-green-600 font-bold text-lg mb-4 animate-pulse">Friday 7:00 PM</p>
+                    <p class="text-gray-600 animate-fade">An energetic and inspiring time for young hearts to connect, worship and grow deeper in their walk with Christ.</p>
+                </div>
+                <div class="service-time bg-white p-6 rounded-lg shadow-md text-center hover:scale-105 hover:shadow-2xl hover:border-l-4 hover:border-yellow-600 animate-slide-in-left" id="service-5">
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 animate-gradient-text">Sunday School for kids</h3>
+                    <p class="text-yellow-600 font-bold text-lg mb-4 animate-pulse">Sunday 12:00 PM</p>
+                    <p class="text-gray-600 animate-fade">An engaging time of learning and fun as children grow in faith through Bible stories, songs, and activities.</p>
+                </div>
+                <div class="service-time bg-white p-6 rounded-lg shadow-md text-center hover:scale-105 hover:shadow-2xl hover:border-l-4 hover:border-green-600 animate-slide-in-right" id="service-6">
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 animate-gradient-text">Women's Fellowship</h3>
+                    <p class="text-green-600 font-bold text-lg mb-4 animate-pulse">Sunday 7:00 PM</p>
+                    <p class="text-gray-600 animate-fade">Join us for a time of encouragement, prayer, and fellowship as women of faith grow together in God's Word.</p>
+                </div>
+                <div class="service-time bg-white p-6 rounded-lg shadow-md text-center hover:scale-105 hover:shadow-2xl hover:border-l-4 hover:border-green-600 animate-slide-in-left" id="service-7">
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 animate-gradient-text">Men's Fellowship</h3>
+                    <p class="text-green-600 font-bold text-lg mb-4 animate-pulse">Sunday 7:00 PM</p>
+                    <p class="text-gray-600 animate-fade">Gather with fellow brothers in Christ for prayer, discussion, and spiritual growth grounded in God's Word.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="festival-section" class="bg-pink-500 text-white py-8 px-6 shadow-lg animate-fade-in relative overflow-hidden">
+        <div class="container mx-auto text-center relative z-10">
+            <h3 class="text-2xl font-bold mb-2 animate-fade-in" id="festival-heading">All Saints Church Festivals</h3>
+            <p class="text-lg mb-4 animate-pulse" id="festival-dates">Church Dedication Festival - <span>Oct 31 & Nov 1 & 2</span></p>
+            <p class="text-base mt-2 animate-fade" id="festival-desc">
+                Celebrate with us in a joyful atmosphere filled with music, prayer, and community spirit. All are welcome to join the festivities and experience the vibrant traditions of our church!
+            </p>
+        </div>
+        <div class="confetti-container absolute inset-0 pointer-events-none z-0">
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+        </div>
+    </div>
+
+    <section id="gallery" class="relative overflow-hidden gallery-section">
+        <div class="animated-bubbles absolute inset-0 pointer-events-none z-0">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 animate-fade-in" id="gallery-intro">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4 text-transparent text-gray-600 bg-gradient-to-r from-yellow-400 via-purple-400 to-blue-400 bg-clip-text animate-gradient-text" id="gallery-heading">
+                    Church Life
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto animate-fade" id="gallery-subheading">Moments from our fellowship and worship</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg animate-fade-in" id="gallery-item-1">
+                    <img src="im/1.jpg" alt="All Saints Church" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 hover:brightness-110">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg animate-fade-in" id="gallery-item-2">
+                    <img src="im/2.jpg" alt="All Saints Church" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 hover:brightness-110">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg animate-fade-in" id="gallery-item-3">
+                    <img src="im/3.jpg" alt="All Saints Church" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 hover:brightness-110">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg animate-fade-in" id="gallery-item-4">
+                    <img src="im/ch edit.jpg" alt="All Saints Church" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 hover:brightness-110">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg animate-fade-in" id="gallery-item-5">
+                    <img src="im/FB_IMG_1755679718712.jpg" alt="All Saints Church" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 hover:brightness-110">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg animate-fade-in" id="gallery-item-6">
+                    <img src="im/2025082111144442.jpg" alt="All Saints Church" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 hover:brightness-110">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 animate-fade-in shadow-xl rounded-2xl py-8 px-4 relative overflow-hidden" id="contact-intro">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in" id="contact-heading">
+                    Church Location & Contact
+                </h2>
+                <p class="text-lg text-gray-700 animate-fade" id="contact-subheading">
+                    Find us and get in touch
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div class="space-y-6 animate-slide-in-left" id="contact-details">
+                    <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-md">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Church Address</h3>
+                            <p class="text-gray-600">East Sadayamankulam, Tirunelveli District<br>Tamilnadu 627152</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-md">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Email</h3>
+                            <p class="text-gray-600">info@allsaintschurch.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-md">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm.5 13h-1v-5h1v5zm0-6h-1V7h1v2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Church Open Timing</h3>
+                            <p class="text-gray-600">Sun-Sat: 4:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container w-full h-80 md:h-full animate-slide-in-right" id="map-container">
+                    <img src="im/Screenshot2025-09-0211495.jpeg" alt="Map location of the church" width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-media-section" class="w-full max-w-lg mx-auto my-16 p-8 rounded-3xl shadow-2xl relative overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient-flow">
+        <div class="animated-bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="relative z-10 text-center">
+            <h2 class="heading-font text-3xl md:text-4xl font-extrabold text-white mb-3 tracking-tight pop-in">Connect With Us!</h2>
+            <p class="text-lg text-white/90 mb-8 max-w-xs mx-auto pop-in pop-delay-1">
+                Join our vibrant church community online and stay inspired!
+            </p>
+        </div>
+        <div class="flex flex-col items-center gap-5 relative z-10">
+            <a href="https://www.instagram.com/csi.allsaintschurch?igsh=MWNvY2Fvbzc4N2ZkMA==" target="_blank" class="flex items-center w-full px-6 py-4 rounded-xl bg-white/20 hover:bg-pink-500/80 group icon-glow pop-in pop-delay-2 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="mr-3 text-pink-400 group-hover:text-white" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.172-.048-3.298a5.53 5.53 0 0 0-.372-1.943 3.916 3.916 0 0 0-.923-1.416A3.927 3.927 0 0 0 13.24.42c-.51-.198-1.09-.333-1.942-.372C10.445.01 10.173 0 8 0zm0 1.5c2.027 0 2.296.009 3.14.047.78.035 1.258.156 1.583.294.55.232.894.577 1.127 1.127.139.325.256.803.294 1.583.038.844.047 1.114.047 3.14s-.009 2.296-.047 3.14c-.035.78-.156 1.258-.294 1.583-.232.55-.577.894-1.127 1.127-.325.139-.803.256-1.583.294-.844.038-1.114.047-3.14.047s-2.296-.009-3.14-.047c-.78-.035-1.258-.156-1.583-.294-.55-.232-.894-.577-1.127-1.127-.139-.325-.256-.803-.294-1.583-.038-.844-.047-1.114-.047-3.14s.009-2.296.047-3.14c.035-.78.156-1.258.294-1.583.232-.55.577-.894 1.127-1.127.325-.139.803-.256 1.583-.294.844-.038 1.114-.047 3.14-.047z"/>
+                    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 1A5 5 0 1 1 8 3a5 5 0 0 1 0 10z"/>
+                    <circle cx="12.93" cy="3.25" r="0.75"/>
+                </svg>
+                <span class="font-semibold text-lg text-white">Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/share/1DtU6cHmZs/" target="_blank" class="flex items-center w-full px-6 py-4 rounded-xl bg-white/20 hover:bg-blue-600/80 group icon-glow pop-in pop-delay-3 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="mr-3 text-blue-400 group-hover:text-white" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+                <span class="font-semibold text-lg text-white">Facebook</span>
+            </a>
+            <a href="https://youtube.com/@allsaintschurcheastsadayam4240?si=hlMN5MVKCOA35TFm" target="_blank" class="flex items-center w-full px-6 py-4 rounded-xl bg-white/20 hover:bg-red-600/80 group icon-glow pop-in pop-delay-4 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="mr-3 text-red-400 group-hover:text-white" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402a28.07 28.07 0 0 1 .018 2.317c0 .878-.019 1.75-.045 2.597-.03.588-.101.995-.22 1.42a2.02 2.02 0 0 1-1.415.923c-1.248.332-6.1.334-6.18.335h-.088c-.823.003-4.988-.03-6.11-.335a2.01 2.01 0 0 1-1.415-.923c-.12-.424-.191-.831-.22-1.42A28.07 28.07 0 0 1 0 8.125v-.111c.01-.86.035-1.724.015-2.597-.015-.424-.085-.83-.203-1.42a2.02 2.02 0 0 1 1.415-.923c1.248-.332 6.1-.334 6.18-.335zM8 5.95v4.09L11.516 8 8 5.95z"/>
+                </svg>
+                <span class="font-semibold text-lg text-white">YouTube</span>
+            </a>
+        </div>
+    </section>
+
+    <br>
+
+    <footer class="bg-gray-900 text-white py-12 animate-fade-in" id="main-footer">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="heading-font text-xl font-bold mb-4">All Saints Church</h3>
+                    <p class="text-gray-400">A beacon of faith in our community since 1962</p>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h3 class="font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/share/1DtU6cHmZs/" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/csi.allsaintschurch?igsh=MWNvY2Fvbzc4N2ZkMA==" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@allsaintschurcheastsadayam4240?si=hlMN5MVKCOA35TFm" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-700">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© All Saints Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
